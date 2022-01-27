@@ -1,0 +1,62 @@
+Request Headers: 
+
+// user agent is the browser fingerprint from the client
+User-Agent: PostmanRuntime/7.29.0
+
+// indicates client accepts all media
+Accept: */*
+
+// a custom postman token 
+Postman-Token: 30831d85-a6d5-43dc-8114-e8e5320de779
+
+// the domain the client is connecting too
+Host: www.googleapis.com
+
+// types of content encoding the client accepts
+Accept-Encoding: gzip, deflate, br
+
+// keep connection alive for multiple request
+Connection: keep-alive
+
+Response Headers:
+
+// content type refers to the type of content returned by the server
+Content-Type: application/json; charset=UTF-8
+
+// describes the different origins that may influence the content of response
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+
+// content encoding refers to format of data encoding being sent back
+Content-Encoding: gzip
+
+// date of the response
+Date: Tue, 25 Jan 2022 20:03:48 GMT
+
+// server generating this message
+Server: ESF
+
+// indicates that content is cached on the browser
+Cache-Control: private
+
+// cross-site scripting protection, when set to 0 it disables xss filtering
+X-XSS-Protection: 0
+
+// used to indicate whether or not client browser should render frames or iframes. Deters click-jacking attacks by ensuring
+// content is not embedded into other sites
+// same origin directive specifies the page can be rendered in a frame as long as the site included in the frame is the
+// sameorigin
+X-Frame-Options: SAMEORIGIN
+
+// server marker used to indicate the MIME types in content-type should be followed and not changed
+// No sniff directive blocks a request if the request destination is of type style and MIME type is not text/css
+// or of type script and MIME type is not a JS MIME type
+X-Content-Type-Options: nosniff
+
+// 'alternative service' - specifies other network locations that can be treated as authoritative for this origin
+// for example. 'h3=":443"' states HTTP/3 protocol at port 443 with a max age of 2592000 seconds
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+// transfer encoding allows for streaming of content to client instead of one big payload
+Transfer-Encoding: chunked
